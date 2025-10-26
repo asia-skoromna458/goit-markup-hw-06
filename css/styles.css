@@ -212,7 +212,6 @@ background-color: transparent;
 .section-hero{
     background-color: #2e2f42;
     color: #fff;
-        min-height: 488px;
         text-align: center;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-background-image.jpg);
         background-repeat: no-repeat;
@@ -221,6 +220,7 @@ background-color: transparent;
             max-width: 1440px;
             margin-left: auto;
             margin-right: auto;
+            padding: 72px 52px;
 }
 @media  screen and (min-width: 1158px) {
     .section-hero{
@@ -230,9 +230,7 @@ background-color: transparent;
     }
     
 }
-.hero-container{
-    padding: 72px 52px;
-}
+
 
 
 
@@ -253,9 +251,7 @@ background-color: transparent;
 }
 
   
-.hero-container {
-    padding: 72px 52px;
-}
+
 
 @media screen and (min-width: 768px) and (max-width:1157px) {
     .hero-container {
@@ -681,7 +677,6 @@ flex-basis: calc((100% - 72px) / 4);
 
 .footer {
     background-color: #2e2f42;
-    padding: 96px 16px;
     
 }
 @media screen and (min-width: 1158px) {
@@ -692,7 +687,6 @@ flex-basis: calc((100% - 72px) / 4);
 
 .footer-container {
     margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
     
@@ -700,7 +694,7 @@ flex-basis: calc((100% - 72px) / 4);
 @media screen and (min-width: 768px) {
     .footer-container{
         flex-direction: row;
-        margin-left: 108px;
+        padding-left:108px;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -1328,6 +1322,9 @@ span.modal-text {
     background-color: #fff;
     transition: 400ms ease-in;
 }
+.mobile-menu-icon-btn{
+    fill: #2f2f37;
+}
 .mobile-menu.is-open{
     transform: translateX(0);
 }
@@ -1396,4 +1393,9 @@ span.modal-text {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #434455;
+}
+@media screen and (min-width:767px) {
+    .mobile-menu{
+        display: none;
+    }
 }
