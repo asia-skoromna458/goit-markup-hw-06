@@ -233,6 +233,9 @@ background-color: transparent;
 .hero-container{
     padding: 72px 52px;
 }
+
+
+
 @media screen and (min-width: 1158px) {
     .section-hero {
         height: 600px;
@@ -240,9 +243,16 @@ background-color: transparent;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-desk-min.jpg);
 
     }
+        @media (min-resolution: 192dpi) {
+            .section-hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-desk@2x-min.jpg);
+            }
+    
+        }
 
 }
 
+  
 .hero-container {
     padding: 72px 52px;
 }
@@ -258,7 +268,16 @@ background-color: transparent;
     .section-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-tab-min.jpg);
     }
+
+    @media (min-resolution: 192dpi) {
+        .section-hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-tab@2x-min.jpg);
+            }
+    }
 }
+
+
+
 @media screen and (min-width:1158px) {
     .hero-container{
         padding: 0;
@@ -662,7 +681,7 @@ flex-basis: calc((100% - 72px) / 4);
 
 .footer {
     background-color: #2e2f42;
-    padding: 96px 0;
+    padding: 96px 16px;
     
 }
 @media screen and (min-width: 1158px) {
@@ -675,14 +694,13 @@ flex-basis: calc((100% - 72px) / 4);
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
-        flex-direction: column;
-   
-    justify-content: center;
     flex-wrap: wrap;
+    
 }
 @media screen and (min-width: 768px) {
     .footer-container{
         flex-direction: row;
+        margin-left: 108px;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -1356,4 +1374,26 @@ span.modal-text {
 .social-list-mobile-menu{
     display: flex;
     gap: 40px;
+}
+.mobile-menu-link{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+.mobile-menu-link-tel{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #4d5ae5;
+
+}
+.mobile-menu-link-mail{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
 }
