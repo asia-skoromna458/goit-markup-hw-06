@@ -203,11 +203,31 @@ background-color: transparent;
 }
 .contacts-link{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        font-size: 16px;
-        line-height: 1.5;
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
         letter-spacing: 0.02em;
         color: #434455;
             gap: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .contacts-link {
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16667;
+            letter-spacing: 0.04em;
+            color: #434455;
+    }
+
+}
+@media screen and (min-width:1158px) {
+    .contacts-link{
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+    }
+    
 }
 .contacts-link:hover,
 .contacts-link:focus,
@@ -232,6 +252,13 @@ background-color: transparent;
             margin-right: auto;
             padding: 72px 52px;
 }
+
+@media (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-mob@2x-min.jpg);
+    }
+
+}
 @media  screen and (min-width: 768px) {
     .section-hero{
         
@@ -241,7 +268,22 @@ background-color: transparent;
     
 }
 
+@media screen and (min-width: 768px) {
+    .section-hero {
+        height: 436px;
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-tab-min.jpg);
 
+    }
+
+    @media (min-resolution: 192dpi) {
+        .section-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-tab@2x-min.jpg);
+        }
+
+    }
+
+}
 
 
 @media screen and (min-width: 1158px) {
@@ -706,6 +748,11 @@ flex-basis: calc((100% - 72px) / 4);
     justify-content: center;
     
 }
+@media screen and (min-width: 1158px) {
+    .footer-container {
+    align-items: flex-start;
+    }
+}
 
 .footer-logo .logo-part {
     color: #f4f4fd;
@@ -796,9 +843,7 @@ fill: #f4f4fd;
 @media screen and (min-width: 1158px) {
     .footer-form-container {
         margin: 0;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 }
 
