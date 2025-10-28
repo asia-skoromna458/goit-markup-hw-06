@@ -84,6 +84,7 @@ a{
 }
 .header-container {
     align-items: center;
+    padding: 16px ;
 
 }
 @media screen and (min-width:768px) {
@@ -97,6 +98,12 @@ a{
     .header-container{
                 display: flex;
                 justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .header-container {
+        padding: 0 15px;
+            margin: 0 auto;
     }
 }
 .mobile-menu-btn{
@@ -225,10 +232,10 @@ background-color: transparent;
             margin-right: auto;
             padding: 72px 52px;
 }
-@media  screen and (min-width: 1158px) {
+@media  screen and (min-width: 768px) {
     .section-hero{
-        height: 600px;
-        padding: 188px 0;
+        
+        padding: 112px 136px ;
 
     }
     
@@ -281,15 +288,16 @@ background-color: transparent;
     margin: 0 auto 72px;
     font-weight: 700;
             font-size: 36px;
-            line-height: 1.11111;
+            line-height: 1.11;
             letter-spacing: 0.02em;
             text-align: center;
             color: #fff;
+
 }
 @media screen and (min-width: 768px) {
     .hero-title{
         max-width: 496px;
-        margin: 0 auto 36px;
+        margin-bottom: 36px;
         font-size: 56px;
             line-height: 1.07;
     }
@@ -693,18 +701,10 @@ flex-basis: calc((100% - 72px) / 4);
 }
 
 .footer-container {
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
-}
-
-@media screen and (min-width: 1158px) {
-.footer-container{
-    margin: 0;
-
-}
 }
 
 .footer-logo .logo-part {
